@@ -35,7 +35,7 @@ data = ''
 # for i in range(1, 2):
 for i in fp:
         i = str(i).strip()
-        url = "http://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchRes.jsp?typ=stud&numtxt="+i+"&sbm=Y"
+        url = "https://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchRes.jsp?typ=stud&numtxt="+i+"&sbm=Y"
         response = requests.get(url)
         html = response.content
         data = ''
