@@ -7,9 +7,9 @@ for i in dp:
     tq = 0
     while y >= 27:
         if(tq == 0):
-            url = 'http://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchStudRoll.jsp?selstudrol=&selstuddep='+i+'&selstudnam='
+            url = 'https://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchStudRoll.jsp?selstudrol=&selstuddep='+i+'&selstudnam='
         else:
-            url = 'http://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchStudRoll.jsp?recpos='+str(tq)+'&selstudrol=&selstuddep='+i+'&selstudnam='
+            url = 'https://oa.cc.iitk.ac.in:8181/Oa/Jsp/OAServices/IITk_SrchStudRoll.jsp?recpos='+str(tq)+'&selstudrol=&selstuddep='+i+'&selstudnam='
         response = requests.get(url)
         html = response.content
 
